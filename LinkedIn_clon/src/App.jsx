@@ -1,12 +1,25 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+// import Header from "./components/Header";
+// import Home from "./components/Home";
+import Login from "./components/Login";
 
 function App() {
- 
   return (
-    <>
-      <h1> let's build the linkedin clone </h1>
-    </>
-  )
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route exact path="/" Component={Login}>
+            {/* <Login /> */}
+          </Route>
+          {/* <Route path="/home">
+            <Header />
+            <Home />
+          </Route> */}
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
