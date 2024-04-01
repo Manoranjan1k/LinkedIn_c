@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-// import Header from "./components/Header";
-// import Home from "./components/Home";
+import HomeH from "./components/HomeH";
 import Login from "./components/Login";
 
 function App() {
@@ -9,13 +8,12 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+        
           <Route exact path="/" Component={Login}>
-            {/* <Login /> */}
           </Route>
-          {/* <Route path="/home">
-            <Header />
-            <Home />
-          </Route> */}
+          <Route path="/home" Component={HomeH} >
+          </Route>
+          
         </Routes>
       </Router>
     </div>
