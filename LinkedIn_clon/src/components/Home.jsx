@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Home = (props) => {
   return (
-    <Container>
+    <Container>   
       <Section>
         <h5>
           <a>Hiring in a hurry? - </a>
