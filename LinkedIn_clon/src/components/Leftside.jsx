@@ -10,7 +10,7 @@ const Leftside = (props) => {
             <Photo />
             <Link>Welcome, there!</Link>
           </a>
-          <a>
+          <a> 
             <AddPhotoText>Add a photo</AddPhotoText>
           </a>
         </UserInfo>
